@@ -1,0 +1,117 @@
+doctype html
+html(lang="ko")
+    head 
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title GraphCalculator
+        link(rel="icon" href="../public/images/favicon.ico" type="image/x-icon")
+        link(rel="stylesheet", href="../public/css/style.css")
+        script(src="../public/modules/domObjectChange.js" defer)
+        script(src="../public/modules/getSelection.js" defer)
+        //- script(src="../public/js/effect.js" defer)
+        script(src="../public/config/functionButtons.js" defer)
+        script(src="../public/config/regularExpression.js" defer)
+        script(src="../public/config/colors.js" defer)
+        script(src="../public/js/graphCalculator.js" defer)
+        //- script(src="../public/js/button.js" defer)
+        //- script(src="../public/js/keyboard.js" defer) 
+        //- script(src="../public/js/formula.js" defer)
+        //- script(src="../public/js/valueObject.js" defer)
+        //- script(src="../public/js/editButton.js" defer)
+        //- script(src="../public/js/scaleFactor.js" defer)
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" defer)
+        script(src="../public/js/graph.js" defer)
+    body
+        .wrapper
+            header
+                h1 Graph Calculator
+            main
+                section.calculator_container#calculatorContainer
+                    .calculator_head
+                        button.btn_icon_toggle#moreBtn
+                            span 접기
+                    .memories_box
+                        ul.memories_list#memoriesList
+                    .calculator_box
+                        .button_top
+                            input(type="radio" name="graph" value="dot")#radioDot
+                            label(for="radioDot") 점
+                            input(type="radio" name="graph" value="line")#radioLine
+                            label(for="radioLine") 1차
+                            input(type="radio" name="graph" value="quadratic")#radioQuadratic
+                            label(for="radioQuadratic") 2차
+                            input(type="radio" name="graph" value="calculus")#radioCalculus
+                            label(for="radioCalculus") 3차
+                            input(type="radio" name="graph" value="circle")#radioCircle
+                            label(for="radioCircle") 원
+                            button.create_btn#createBtn(type='button')
+                                    span 추가
+                        .button_list
+                            #addBox.button_add
+                                button(type='button').btn_icon_left
+                                    span 왼족 커서 이동
+                                button(type='button').btn_icon_right
+                                    span 오른쪽 커서 이동
+                                button(type='button').btn_icon_clear#clearBtn
+                                    span 지우기
+                        .button_main
+                            #buttonBox1.button_left
+                            #buttonBox2.button_right
+                section.graph_container#graphContainer
+                    .btn_box
+                        button(type='button').btn_icon_menu#menuBtn
+                            span 대칭
+                        button(type='button').btn_icon_zoomin#zoomIn
+                            span 확대
+                        button(type='button').btn_icon_zoomout#zoomOut
+                            span 축소
+                        button(type='button').btn_icon_center#centerBtn
+                            span 원점
+                div.popup_box.close#popupBox
+                    div.popup_input
+                        div.popup_list
+                            label(for="axis_x") x축
+                            input(type="text")#axis_x
+                        div.popup_list
+                            label(for="axis_y") y축
+                            input(type="text")#axis_y
+                        button(type="button").comn_message#graphMoveBtn
+                            | 이동
+                            span 이동
+                    //- div.popup_btn.btn_color
+                    //-     button(type="button")
+                    //-         span 이동
+                    //-     button(type="button")
+                    //-         span 닮음
+                    //-     button(type="button")
+                    //-         span 회전
+                    div.popup_btn
+                        button(type="button").comn_message#graphXMoveBtn
+                            | X축 대칭
+                            span X축 대칭
+                        button(type="button").comn_message#graphYMoveBtn
+                            | Y축 대칭
+                            span Y축 대칭
+                        button(type="button").comn_message#graphXYMoveBtn
+                            | XY축 대칭
+                            span XY축 대칭
+                        button(type="button").comn_message#graphOriginalBtn
+                            | 원본
+                            span 원본
+                    div.popup_color
+                        input(type="radio" name="color" value="red").comn_message#radioRed
+                        label(for="radioRed") 빨간색
+                        input(type="radio" name="color" value="yellow").comn_message#radioYellow
+                        label(for="radioYellow") 노랑색
+                        input(type="radio" name="color" value="green").comn_message#radioGreen
+                        label(for="radioGreen") 초록색
+                        input(type="radio" name="color" value="blue").comn_message#radioBlue
+                        label(for="radioBlue") 파란색
+                        input(type="radio" name="color" value="purple").comn_message#radioPurple
+                        label(for="radioPurple") 보라색
+                        input(type="radio" name="color" value="black").comn_message#radioBlack
+                        label(for="radioBlack") 검정색
+            article.view_message_box#viewMessageBox
+                .text_box
+                    p.view_message#viewMessage
+                    button.okBtn#okBtn 확인

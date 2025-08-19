@@ -1,0 +1,28 @@
+const functions1 = [
+    { name: "seven", value: "7" },
+    { name: "eight", value: "8" },
+    { name: "nine", value: "9" },
+    { name: "four", value: "4" },
+    { name: "five", value: "5" },
+    { name: "six", value: "6" },
+    { name: "one", value: "1" },
+    { name: "two", value: "2" },
+    { name: "three", value: "3" },
+    { name: "zero", value: "0" },
+    { name: "dot", value: "." },
+    { name: "minus", value: "-" },
+]
+const functions2 = [
+    { name: "aPower", value: "aⁿ" },
+    { name: "absoluteValue", value: "∣a∣" },
+    { name: "leftParen", value: "(" },
+    { name: "rightParen", value: ")" },
+    { name: "pi", value: "π" },
+    { name: "root", value: "√" },
+    { name: "sin", value: "sin" },
+    { name: "cos", value: "cos" },
+    { name: "tan", value: "tan" },
+    { name: "plus", value: "+" },
+    { name: "division", value: "÷" },
+    { name: "multiple", value: "×" },
+]

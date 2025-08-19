@@ -1,0 +1,813 @@
+@font-face {
+  font-family: "NPSfontExtraBold";
+  src: url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;700&display=swap");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Symbola;
+  src: url(data:font/woff2;base64,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) format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
+  -webkit-text-size-adjust: none;
+  color: #333;
+}
+
+html, body {
+  font-size: 100px;
+  width: 100%;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: #111;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+body, input, select, textarea, button {
+  border: none;
+  font-size: 12px;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+address, cite, code, em {
+  font-style: normal;
+  font-weight: normal;
+}
+
+label, img, input, select, textarea, button {
+  vertical-align: middle;
+}
+
+caption, legend {
+  line-height: 0;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+hr {
+  display: none;
+}
+
+main, header, section, nav, footer, aside, article, figure {
+  display: block;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+button, a, label {
+  background-color: unset;
+  cursor: pointer;
+}
+
+/* Form */
+input[type=tel],
+input[type=time],
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=file],
+input[type=url],
+input[type=number],
+input[type=date], textarea {
+  vertical-align: middle;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input[type=tel][readonly],
+input[type=text][readonly],
+input[type=password][readonly],
+input[type=email][readonly],
+input[type=search][readonly],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=email][disabled] {
+  border-color: unset;
+  -webkit-appearance: none;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper header {
+  width: 100%;
+  height: 50px;
+  background: #5c82ff;
+  z-index: 10;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper header h1 {
+  color: #fff;
+  font-size: 30px;
+}
+.wrapper main {
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.wrapper main .more_btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url("../images/ep_d-arrow-right.svg") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+.wrapper main .more_btn.close {
+  display: none;
+}
+.wrapper main .calculator_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  box-shadow: 0 0 0.1rem 0.1rem #d6d6d6;
+  background-color: #FFF;
+  transform: translateY(calc(100% - 34px));
+  z-index: 99;
+}
+.wrapper main .calculator_container .calculator_head {
+  width: 100%;
+}
+.wrapper main .calculator_container .calculator_head .btn_icon_toggle {
+  padding: 0.1rem 0;
+  background: url("../images/icon_toggle.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .calculator_container .calculator_head .btn_icon_toggle span {
+  font-size: 0;
+}
+.wrapper main .calculator_container .memories_box {
+  position: relative;
+  display: none;
+  margin: 0 0.1rem 0.1rem 0.1rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+  overflow-y: scroll;
+  border: 0.02rem solid #809eff;
+  border-radius: 0.1rem;
+  background: #FFF;
+}
+.wrapper main .calculator_container .memories_box .view_message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0.1rem;
+  text-align: center;
+  line-height: 0.22rem;
+  font-size: 0.14rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list {
+  width: 100%;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories {
+  padding: 0.1rem;
+  box-sizing: border-box;
+  background: #EEE;
+  border-radius: 0.1rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .color {
+  width: 0.05rem;
+  border-radius: 0.2rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .memory_content {
+  width: 80%;
+  outline: 0;
+  font-size: 0.16rem;
+  font-weight: bold;
+  line-height: 0.3rem;
+  padding: 0 0.05rem;
+  margin-left: 0.1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: Symbola, Times New Roman, serif;
+  font-style: italic;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .memory_content sup {
+  margin-left: 0.02rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box {
+  width: 20%;
+  display: flex;
+  margin-left: 0.1rem;
+  /* on */
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box input {
+  display: none;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box label {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon_off.svg");
+  background-size: 0.25rem;
+  background-position: center;
+  font-size: 0;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box .check_icon:checked + label {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon_on.svg");
+  background-size: 0.25rem;
+  background-position: center;
+  font-size: 0;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box .btn_icon_draw {
+  background: url("../images/icon_draw.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box .btn_icon_draw span {
+  font-size: 0;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box .btn_icon_delete {
+  background: url("../images/icon_delete.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.16rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_main .btn_box .btn_icon_delete span {
+  font-size: 0;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories:nth-child(n+2) {
+  margin-top: 0.1rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_sineq {
+  display: flex;
+  margin-top: 0.1rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_sineq input[type=radio] {
+  display: none;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_sineq label {
+  width: 100%;
+  height: 0.25rem;
+  background: #d4d4d4;
+  text-align: center;
+  font-size: 0.14rem;
+  line-height: 0.25rem;
+  border-radius: 0.2rem;
+  border: 0.02rem solid #909090;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_sineq label:nth-child(n+2) {
+  margin-left: 0.1rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_sineq input[type=radio]:checked + label {
+  border: 0.02rem solid #809eff;
+  background: #bfceff;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_input {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.1rem;
+  margin-bottom: 0.05rem;
+  padding-left: 0.1rem;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_input .sub_txt {
+  flex: 1 1 10%;
+  line-height: 0.25rem;
+  font-size: 0.16rem;
+  font-family: Symbola, Times New Roman, serif;
+  font-style: italic;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_input .sub_input {
+  flex: 1 1 85%;
+  padding: 0 0.05rem;
+  line-height: 0.25rem;
+  font-size: 0.16rem;
+  outline: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 0.01rem solid #999;
+  font-family: Symbola, Times New Roman, serif;
+  font-style: italic;
+}
+.wrapper main .calculator_container .memories_box .memories_list .calculate_memories .calculate_sub .calculate_input .sub_value {
+  flex: 1 1 90%;
+  padding: 0.06rem 0 0 0.45rem;
+  font-size: 0.12rem;
+  color: #5c82ff;
+}
+.wrapper main .calculator_container .memories_box .memories_list .on {
+  background: #d5dfff;
+}
+.wrapper main .calculator_container .calculator_box {
+  display: none;
+  padding: 0 0.1rem 0.1rem 0.1rem;
+}
+.wrapper main .calculator_container .calculator_box .button_top {
+  display: flex;
+}
+.wrapper main .calculator_container .calculator_box .button_top input[type=radio] {
+  display: none;
+}
+.wrapper main .calculator_container .calculator_box .button_top label {
+  width: 100%;
+  height: 0.56rem;
+  margin: 0.02rem;
+  line-height: 0.54rem;
+  background-color: #EEE;
+  border-radius: 0.05rem;
+  font-size: 0.12rem;
+  text-align: center;
+  border: 0.02rem solid transparent;
+}
+.wrapper main .calculator_container .calculator_box .button_top input[type=radio]:checked + label {
+  border: 0.02rem solid #809eff;
+  background: #d5dfff;
+}
+.wrapper main .calculator_container .calculator_box .button_top .create_btn {
+  width: 100%;
+  margin: 0.02rem;
+  border-radius: 0.05rem;
+  background: #909090;
+}
+.wrapper main .calculator_container .calculator_box .button_top .create_btn span {
+  color: #fff;
+}
+.wrapper main .calculator_container .calculator_box .button_top .create_btn:hover {
+  background: #777;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add {
+  display: flex;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add [class^=btn_icon] {
+  border: 0;
+  width: 100%;
+  padding: 0.1rem 0;
+  margin: 0.02rem;
+  background-color: #809eff;
+  border-radius: 0.05rem;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add [class^=btn_icon] span {
+  color: #FFF;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add [class^=btn_icon]:hover {
+  background-color: #5c82ff;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add .btn_icon_left {
+  background-image: url("../images/icon_left.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.16rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add .btn_icon_left span {
+  font-size: 0;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add .btn_icon_right {
+  background-image: url("../images/icon_right.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.16rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add .btn_icon_right span {
+  font-size: 0;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add .btn_icon_clear {
+  background-image: url("../images/icon_clear.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.16rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .calculator_container .calculator_box .button_list .button_add .btn_icon_clear span {
+  font-size: 0;
+}
+.wrapper main .calculator_container .calculator_box .button_main {
+  display: flex;
+}
+.wrapper main .calculator_container .calculator_box .button_main .button_left, .wrapper main .calculator_container .calculator_box .button_main .button_right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.wrapper main .calculator_container .calculator_box .button_main .button_left button, .wrapper main .calculator_container .calculator_box .button_main .button_right button {
+  border: 0;
+  flex: 1 1 25%;
+  height: 0.35rem;
+  margin: 0.02rem;
+  background: #d5dfff;
+  border-radius: 0.05rem;
+  font-family: Symbola, Times New Roman, serif;
+}
+.wrapper main .calculator_container .calculator_box .button_main .button_left button:hover, .wrapper main .calculator_container .calculator_box .button_main .button_right button:hover {
+  background: #bfceff;
+}
+.wrapper main .calculator_container.open {
+  transform: translateY(0);
+}
+.wrapper main .calculator_container.open .calculator_head .btn_icon_toggle {
+  transform: rotate(180deg) !important;
+}
+.wrapper main .calculator_container.open .memories_box,
+.wrapper main .calculator_container.open .calculator_box {
+  display: block;
+}
+.wrapper main .graph_container {
+  width: 100%;
+  height: 100%;
+  transition: height 0.2s linear;
+  position: relative;
+}
+.wrapper main .graph_container canvas {
+  position: relative;
+}
+.wrapper main .graph_container .btn_box {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 0.4rem;
+  z-index: 999;
+}
+.wrapper main .graph_container .btn_box [class^=btn_icon] {
+  width: 100%;
+  height: 0.4rem;
+  margin-bottom: 0.1rem;
+  background: #809eff;
+  border-radius: 0.05rem;
+  box-shadow: 0.02rem 0.02rem 0.04rem #9a9a9a;
+}
+.wrapper main .graph_container .btn_box [class^=btn_icon]:hover {
+  background-color: #5c82ff;
+}
+.wrapper main .graph_container .btn_box [class^=btn_icon] span {
+  font-size: 0;
+}
+.wrapper main .graph_container .btn_box [class$=_menu] {
+  padding: 0.1rem 0;
+  background-image: url("../images/icon_menu.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .graph_container .btn_box [class$=_menu] span {
+  font-size: 0;
+}
+.wrapper main .graph_container .btn_box [class$=_zoomin] {
+  padding: 0.1rem 0;
+  background-image: url("../images/icon_zoomin.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.22rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .graph_container .btn_box [class$=_zoomin] span {
+  font-size: 0;
+}
+.wrapper main .graph_container .btn_box [class$=zoomout] {
+  padding: 0.1rem 0;
+  background-image: url("../images/icon_zoomout.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.22rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .graph_container .btn_box [class$=zoomout] span {
+  font-size: 0;
+}
+.wrapper main .graph_container .btn_box [class$=center] {
+  padding: 0.1rem 0;
+  background-image: url("../images/icon_center.svg");
+  display: block;
+  width: 100%;
+  background-size: 0.32rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.wrapper main .graph_container .btn_box [class$=center] span {
+  font-size: 0;
+}
+.wrapper main .graph_container.decrease {
+  height: calc(100% - 342px);
+}
+.wrapper main .popup_box {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.8rem;
+  margin-left: 0.2rem;
+  padding: 0.1rem;
+  border: 0.015rem solid #5c82ff;
+  border-radius: 0.1rem;
+  box-shadow: 0.05rem 0.05rem 0.1rem #d6d6d6;
+  background-color: #FFF;
+  z-index: 100;
+}
+.wrapper main .popup_box.close {
+  display: none;
+}
+.wrapper main .popup_box .popup_input {
+  display: flex;
+}
+.wrapper main .popup_box .popup_input .popup_list {
+  display: flex;
+}
+.wrapper main .popup_box .popup_input .popup_list label {
+  width: 25%;
+  font-size: 0.14rem;
+  line-height: 0.2rem;
+}
+.wrapper main .popup_box .popup_input .popup_list input {
+  width: 0.6rem;
+  padding: 0 0.05rem;
+  height: 0.2rem;
+  margin-left: 0.1rem;
+  border-bottom: 0.01rem solid #999;
+  font-size: 0.14rem;
+}
+.wrapper main .popup_box .popup_input .popup_list:nth-child(n+2) {
+  margin-left: 0.15rem;
+}
+.wrapper main .popup_box .popup_input button[type=button] {
+  width: 0.4rem;
+  margin-left: 0.1rem;
+  padding: 0.06rem 0;
+  background: #d5dfff;
+  border-radius: 0.05rem;
+}
+.wrapper main .popup_box .popup_input button[type=button]:hover {
+  background: #bfceff;
+}
+.wrapper main .popup_box .popup_input button[type=button] span {
+  font-size: 0;
+}
+.wrapper main .popup_box .popup_btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.1rem;
+}
+.wrapper main .popup_box .popup_btn button {
+  flex: 1 1 30%;
+  width: 100%;
+  padding: 0.06rem 0;
+  background: #d5dfff;
+  border-radius: 0.05rem;
+}
+.wrapper main .popup_box .popup_btn button span {
+  font-size: 0;
+}
+.wrapper main .popup_box .popup_btn button:nth-child(2), .wrapper main .popup_box .popup_btn button:nth-child(3) {
+  margin-left: 0.05rem;
+}
+.wrapper main .popup_box .popup_btn button:last-child {
+  background-color: #809eff;
+  margin-top: 0.05rem;
+}
+.wrapper main .popup_box .popup_btn button:last-child:hover {
+  background-color: #5c82ff;
+}
+.wrapper main .popup_box .popup_btn button:hover {
+  background: #bfceff;
+}
+.wrapper main .popup_box .popup_btn button.clicked {
+  background: #bfceff;
+}
+.wrapper main .popup_box .popup_color {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.1rem;
+}
+.wrapper main .popup_box .popup_color input[type=radio] {
+  display: none;
+}
+.wrapper main .popup_box .popup_color input[type=radio]:checked + label {
+  position: relative;
+}
+.wrapper main .popup_box .popup_color input[type=radio]:checked + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.16rem;
+  height: 0.16rem;
+  border: 0.03rem solid #FFF;
+  border-radius: 50%;
+}
+.wrapper main .popup_box .popup_color label {
+  display: block;
+  margin: 0.05rem;
+  width: 100%;
+  height: 0.30425rem;
+  border-radius: 50%;
+  font-size: 0;
+}
+.wrapper main .popup_box .popup_color input[value=red] + label {
+  background: #c30000;
+}
+.wrapper main .popup_box .popup_color input[value=yellow] + label {
+  background: #e7c000;
+}
+.wrapper main .popup_box .popup_color input[value=green] + label {
+  background: #059a00;
+}
+.wrapper main .popup_box .popup_color input[value=blue] + label {
+  background: #0300c3;
+}
+.wrapper main .popup_box .popup_color input[value=purple] + label {
+  background: #6e00b2;
+}
+.wrapper main .popup_box .popup_color input[value=black] + label {
+  background: #333;
+}
+.wrapper article.view_message_box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  display: none;
+}
+.wrapper article.view_message_box .text_box {
+  width: 4rem;
+  height: 2rem;
+  padding: 0.2rem;
+  background: #d5dfff;
+  border-radius: 0.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.wrapper article.view_message_box .text_box .view_message {
+  margin-top: 0.4rem;
+  font-size: 0.14rem;
+  font-weight: 600;
+}
+.wrapper article.view_message_box .text_box .okBtn {
+  width: 0.8rem;
+  height: 0.3rem;
+  margin-top: 0.5rem;
+  background: #809eff;
+  border-radius: 0.04rem;
+  font-size: 0.12rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media all and (min-width: 600px) {
+  .wrapper main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .wrapper main .calculator_container {
+    top: 0 !important;
+    width: 4rem !important;
+    height: 100% !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #d6d6d6;
+    transform: translateX(-100%);
+  }
+  .wrapper main .calculator_container .calculator_head {
+    position: absolute;
+    left: 4rem;
+    width: 0.4rem !important;
+    background: #FFF;
+    box-shadow: 0.1rem 0.1rem 0.1rem #d6d6d6;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+  }
+  .wrapper main .calculator_container .calculator_head .btn_icon_toggle {
+    height: 1rem;
+    transform: rotate(90deg) !important;
+    transition: all 0.2s linear;
+  }
+  .wrapper main .calculator_container .memories_box {
+    margin: 0.1rem !important;
+    height: calc(100% - 2.9rem) !important;
+  }
+  .wrapper main .calculator_container .calculator_box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .wrapper main .calculator_container.open {
+    transform: translateX(0);
+  }
+  .wrapper main .calculator_container.open .calculator_head .btn_icon_toggle {
+    transform: rotate(270deg) !important;
+  }
+  .wrapper main .graph_container {
+    transition: width 0.2s linear;
+  }
+  .wrapper main .graph_container.decrease {
+    width: calc(100% - 4rem);
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

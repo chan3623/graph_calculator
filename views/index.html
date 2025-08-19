@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphCalculator</title>
+    <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="../public/modules/domObjectChange.js" defer></script>
+    <script src="../public/modules/getSelection.js" defer></script>
+    <script src="../public/config/functionButtons.js" defer></script>
+    <script src="../public/config/regularExpression.js" defer></script>
+    <script src="../public/config/colors.js" defer></script>
+    <script src="../public/js/graphCalculator.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" defer></script>
+    <script src="../public/js/graph.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Graph Calculator</h1>
+      </header>
+      <main>
+        <section class="calculator_container" id="calculatorContainer">
+          <div class="calculator_head">
+            <button class="btn_icon_toggle" id="moreBtn"><span>접기</span></button>
+          </div>
+          <div class="memories_box">
+            <ul class="memories_list" id="memoriesList"></ul>
+          </div>
+          <div class="calculator_box">
+            <div class="button_top">
+              <input type="radio" name="graph" value="dot" id="radioDot">
+              <label for="radioDot">점</label>
+              <input type="radio" name="graph" value="line" id="radioLine">
+              <label for="radioLine">1차</label>
+              <input type="radio" name="graph" value="quadratic" id="radioQuadratic">
+              <label for="radioQuadratic">2차</label>
+              <input type="radio" name="graph" value="calculus" id="radioCalculus">
+              <label for="radioCalculus">3차</label>
+              <input type="radio" name="graph" value="circle" id="radioCircle">
+              <label for="radioCircle">원</label>
+              <button class="create_btn" id="createBtn" type="button"><span>추가</span></button>
+            </div>
+            <div class="button_list">
+              <div class="button_add" id="addBox">
+                <button class="btn_icon_left" type="button"><span>왼족 커서 이동</span></button>
+                <button class="btn_icon_right" type="button"><span>오른쪽 커서 이동</span></button>
+                <button class="btn_icon_clear" type="button" id="clearBtn"><span>지우기</span></button>
+              </div>
+            </div>
+            <div class="button_main">
+              <div class="button_left" id="buttonBox1"></div>
+              <div class="button_right" id="buttonBox2"></div>
+            </div>
+          </div>
+        </section>
+        <section class="graph_container" id="graphContainer">
+          <div class="btn_box">
+            <button class="btn_icon_menu" type="button" id="menuBtn"><span>대칭</span></button>
+            <button class="btn_icon_zoomin" type="button" id="zoomIn"><span>확대</span></button>
+            <button class="btn_icon_zoomout" type="button" id="zoomOut"><span>축소</span></button>
+            <button class="btn_icon_center" type="button" id="centerBtn"><span>원점</span></button>
+          </div>
+        </section>
+        <div class="popup_box close" id="popupBox">
+          <div class="popup_input">
+            <div class="popup_list">
+              <label for="axis_x">x축</label>
+              <input type="text" id="axis_x">
+            </div>
+            <div class="popup_list">
+              <label for="axis_y">y축</label>
+              <input type="text" id="axis_y">
+            </div>
+            <button class="comn_message" type="button" id="graphMoveBtn">이동<span>이동</span></button>
+          </div>
+          <div class="popup_btn">
+            <button class="comn_message" type="button" id="graphXMoveBtn">X축 대칭<span>X축 대칭</span></button>
+            <button class="comn_message" type="button" id="graphYMoveBtn">Y축 대칭<span>Y축 대칭</span></button>
+            <button class="comn_message" type="button" id="graphXYMoveBtn">XY축 대칭<span>XY축 대칭</span></button>
+            <button class="comn_message" type="button" id="graphOriginalBtn">원본<span>원본</span></button>
+          </div>
+          <div class="popup_color">
+            <input class="comn_message" type="radio" name="color" value="red" id="radioRed">
+            <label for="radioRed">빨간색</label>
+            <input class="comn_message" type="radio" name="color" value="yellow" id="radioYellow">
+            <label for="radioYellow">노랑색</label>
+            <input class="comn_message" type="radio" name="color" value="green" id="radioGreen">
+            <label for="radioGreen">초록색</label>
+            <input class="comn_message" type="radio" name="color" value="blue" id="radioBlue">
+            <label for="radioBlue">파란색</label>
+            <input class="comn_message" type="radio" name="color" value="purple" id="radioPurple">
+            <label for="radioPurple">보라색</label>
+            <input class="comn_message" type="radio" name="color" value="black" id="radioBlack">
+            <label for="radioBlack">검정색</label>
+          </div>
+        </div>
+      </main>
+      <article class="view_message_box" id="viewMessageBox">
+        <div class="text_box">
+          <p class="view_message" id="viewMessage"></p>
+          <button class="okBtn" id="okBtn">확인</button>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+@mixin position-style($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+@mixin position-right-style($top, $right){
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+@mixin flex-style($row, $wrap, $js, $ai){
+    display: flex;
+    flex-flow: $row $wrap;
+    justify-content: $js;
+    align-items: $ai;
+}
+@mixin icon_btn($size, $position){
+    display: block;
+    width: 100%;
+    background-size: $size;
+    background-position: $position;
+    background-repeat: no-repeat;
+    border: 0;
+    span{
+        font-size: 0;
+    }
+}
+@mixin _btn($size, $position){
+    display: block;
+    width: 100%;
+    background-size: $size;
+    background-position: $position;
+}
