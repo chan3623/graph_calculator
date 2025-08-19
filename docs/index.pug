@@ -1,26 +1,20 @@
 doctype html
 html(lang="ko")
-    head 
+    head
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title GraphCalculator
-        link(rel="icon" href="../public/images/favicon.ico" type="image/x-icon")
-        link(rel="stylesheet", href="../public/css/style.css")
-        script(src="../public/modules/domObjectChange.js" defer)
-        script(src="../public/modules/getSelection.js" defer)
-        //- script(src="../public/js/effect.js" defer)
-        script(src="../public/config/functionButtons.js" defer)
-        script(src="../public/config/regularExpression.js" defer)
-        script(src="../public/config/colors.js" defer)
-        script(src="../public/js/graphCalculator.js" defer)
-        //- script(src="../public/js/button.js" defer)
-        //- script(src="../public/js/keyboard.js" defer) 
-        //- script(src="../public/js/formula.js" defer)
-        //- script(src="../public/js/valueObject.js" defer)
-        //- script(src="../public/js/editButton.js" defer)
-        //- script(src="../public/js/scaleFactor.js" defer)
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" defer)
-        script(src="../public/js/graph.js" defer)
+        base(href="/graph_calculator/")
+        link(rel="icon", href="public/images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="public/css/style.css")
+        script(src="public/modules/domObjectChange.js", defer)
+        script(src="public/modules/getSelection.js", defer)
+        script(src="public/config/functionButtons.js", defer)
+        script(src="public/config/regularExpression.js", defer)
+        script(src="public/config/colors.js", defer)
+        script(src="public/js/graphCalculator.js", defer)
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js", defer)
+        script(src="public/js/graph.js", defer)
     body
         .wrapper
             header
